@@ -3,59 +3,101 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meta Bridge — Privacy Policy</title>
+<title>Privacy Policy</title>
 <style>
   body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
          max-width: 760px; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6;
          color: #1a1a1a; }
   h1 { font-size: 1.8rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  h3 { font-size: 1rem; margin-top: 1.5rem; }
   code { background: #f2f2f2; padding: 0.1rem 0.35rem; border-radius: 4px; }
   .updated { color: #666; font-size: 0.9rem; }
+  ul { padding-left: 1.2rem; }
 </style>
 </head>
 <body>
-<h1>Privacy Policy — Meta Bridge</h1>
-<p class="updated">Last updated: September 29, 2026</p>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: September 30, 2026</p>
 
-<p>Meta Bridge (&ldquo;the app&rdquo;, package <code>com.samseide.metabridge</code>) is a companion
-utility for the Meta Bridge relay used with personal robotics hardware. This policy
-explains what the app does and does not do with your information.</p>
+<p>This policy covers two related Android apps. Both are personal projects, written for
+one household and one piece of hardware.</p>
+
+<ul>
+  <li><strong>Alfred for Car</strong>, package <code>com.samseide.alfredcar</code>, the app
+      published on Google Play.</li>
+  <li><strong>Meta Bridge</strong>, package <code>com.samseide.metabridge</code>, a companion
+      app distributed privately. It is not published on Google Play.</li>
+</ul>
+
+<p>Both apps talk to an <strong>Alfred relay</strong>: a small service that runs on a computer
+owned and operated by the same person who writes the apps. Neither app includes a relay.</p>
 
 <h2>Summary</h2>
-<p>Meta Bridge does <strong>not</strong> collect, transmit, sell, or share any personal
-data. There are no accounts, no analytics, no advertising, and no third-party tracking.</p>
+<p>Neither app collects, transmits, sells, or shares personal data. There are no accounts,
+no analytics, no advertising, and no third-party tracking.</p>
 
-<h2>Information We Collect</h2>
-<p><strong>None.</strong> The app does not collect personal information, device
-identifiers, location, contacts, or usage statistics.</p>
+<h2>Alfred for Car</h2>
 
-<h2>Permissions and Why They Exist</h2>
+<h3>What it does</h3>
+<p>It shows a single screen in your car through Android Auto. You tap the button, speak, and
+tap again to stop. The recording is sent to the relay address you configure. The spoken reply
+comes back and plays through the car speakers.</p>
+
+<h3>What is collected</h3>
+<p>Nothing is collected by the developer.</p>
+<p>The app records audio only while you hold the talk button open. That recording is sent to
+the relay address you entered and to no other destination. No copy of it is sent to the
+developer. The only thing the app stores on your phone is the relay address you typed, kept in
+the app's own private settings. It holds no personal information, and you can change or clear
+it at any time from the app's settings screen.</p>
+
+<h3>Permissions and why they exist</h3>
 <ul>
-  <li><strong>Network / Internet access</strong> &mdash; used solely to communicate with the
-      Meta Bridge relay on your local network or a relay address you configure yourself.</li>
-  <li><strong>Local network access</strong> &mdash; required to reach the relay device on your LAN.</li>
-  <li><strong>Bluetooth</strong> (if granted) &mdash; used only to connect to paired
-      audio/wearable devices you choose; no data is transmitted off-device.</li>
-  <li><strong>Microphone</strong> (if granted) &mdash; used only for on-device voice command
-      capture routed to your own relay. Audio is not stored, uploaded, or shared by the app.</li>
+  <li><strong>Microphone</strong>: records your voice while the talk button is held.</li>
+  <li><strong>Internet</strong> and <strong>network state</strong>: reaches the relay address
+      you configured.</li>
+  <li><strong>Foreground service</strong> and <strong>foreground service (microphone)</strong>:
+      keeps the voice session alive while the app is in use.</li>
 </ul>
-<p>Permissions are used only for the functionality above. No permission is used to
-profile you or to send data to us or to anyone else.</p>
+<p>The published app requests no other permissions. It does not request access to your
+contacts, location, text messages, phone state, physical activity, Bluetooth devices, or
+notifications.</p>
 
-<h2>Data Storage</h2>
-<p>Any configuration you enter (relay address, device names, preferences) is stored
-locally on your device only. It is not backed up to, or retrievable by, us.</p>
+<h3>What the app does not do</h3>
+<ul>
+  <li>No analytics, crash reporting, or telemetry.</li>
+  <li>No advertising and no advertising identifiers.</li>
+  <li>No user accounts and no sign-in.</li>
+  <li>No collection of device identifiers, location, or usage data.</li>
+  <li>No reading or sending of text messages.</li>
+  <li>No sharing with third parties, because nothing is collected to share.</li>
+</ul>
 
-<h2>Data Sharing</h2>
-<p>We do not share data with third parties because we do not collect any.</p>
+<h3>Data storage</h3>
+<p>Configuration is stored locally on your device only. It is not backed up to, or
+retrievable by, the developer.</p>
 
-<h2>Children&rsquo;s Privacy</h2>
-<p>The app is not directed at children and collects no data from anyone, including
+<h2>Meta Bridge (companion app, not published on Google Play)</h2>
+<p>Meta Bridge is a companion utility for the same relay, used with personal robotics
+hardware. It collects no personal data either.</p>
+<ul>
+  <li><strong>Internet</strong> and <strong>local network access</strong>: communicates with
+      the relay on your network, or at a relay address you configure yourself.</li>
+  <li><strong>Bluetooth</strong>, if granted: connects to paired audio and wearable devices
+      you choose. No data is transmitted off-device.</li>
+  <li><strong>Microphone</strong>, if granted: captures voice commands for your own relay.
+      Audio is not stored, uploaded, or shared by the app.</li>
+</ul>
+<p>Permissions are used only for the functions listed above. No permission is used to profile
+you, and none is used to send data to the developer or to anyone else.</p>
+
+<h2>Children's privacy</h2>
+<p>Neither app is directed at children, and neither collects data from anyone, including
 children under 13.</p>
 
-<h2>Changes to This Policy</h2>
-<p>If this policy changes, the updated version will be posted at this same URL with a
-revised &ldquo;last updated&rdquo; date.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this same address with a
+revised "last updated" date.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy: <strong>samseide@gmail.com</strong></p>
